@@ -1,0 +1,31 @@
+$dark: #1C3559;
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: auto;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    border-radius: 0px;
+}
+
+main {
+    flex: 1 0 auto;
+
+    .yourTask {
+        min-height: 100px;
+        border: 1px solid #DBDBDB;
+
+    }
+    .update{
+        display: none;
+    }
+}
+
+footer {
+    background-color: #1C3559;
+}

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "install": "^0.13.0",
+    "npm": "^9.6.6",
+    "toastify-js": "^1.12.0"
+  }
+}
