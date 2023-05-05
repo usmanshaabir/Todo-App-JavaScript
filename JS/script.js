@@ -1,7 +1,10 @@
-// Current Date
+
+let getUserName = prompt("Plz Enter YOur Name");
+getUserName = getUserName.charAt(0).toUpperCase() + getUserName.slice(1);
+document.getElementById('user').innerHTML = getUserName;
 init()
 function init() {
-    let getdata = JSON.parse(window.localStorage.getItem("users")) || []
+    let getdata = JSON.parse(localStorage.getItem("users")) || []
 
     if (!getdata.length) {
         document.getElementById('outPut').innerHTML = `<h1 style=text-align:center;>HURRAY! Add a task button to add your task<h1>`;
@@ -193,3 +196,24 @@ setInterval(updateTimer, 1000);
 
 
 
+// handleData = () => {
+//     let editGetData = JSON.parse(localStorage.getItem("users"));
+//     console.log(editGetData);
+//     let updateTitle = document.getElementById('title').value;
+//     let updateLocation = document.getElementById('location').value;
+//     let updateDescription = document.getElementById('description').value;
+
+//     const updateObject = {
+//         updateTitle,
+//         updateLocation,
+//         updateDescription
+//     }
+
+//     let updatedTodo = { ...updateObject, title: updateTitle, location: updateLocation, description: updateDescription }
+//     updateObject.push(updatedTodo)
+//     console.log("value" + updatedTodo.updateDescription);
+//     // localStorage.setItem("users" ,)
+
+
+
+// }
